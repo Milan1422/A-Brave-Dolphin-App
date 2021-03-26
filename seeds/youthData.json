@@ -1,0 +1,18 @@
+[
+    {
+        "first_name": "Anthony",
+        "last_name": "Dominguez",
+        "username": "CSSBossMan",
+        "email": "tony@gmail.com",
+        "password": "password123",
+        "mentor_id": 1
+    },
+    {
+        "first_name": "Lee",
+        "last_name": "Spaulding",
+        "username": "LeaderOfThePack",
+        "email": "lee@gmail.com",
+        "password": "password123",
+        "mentor_id": 1
+    }
+]
