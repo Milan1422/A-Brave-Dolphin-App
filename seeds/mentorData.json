@@ -1,0 +1,22 @@
+[
+    {
+        "first_name" : "Daymond",   
+        "last_name"  :"John",
+        "mentor_email": "Djohn@fubuworld.com",
+        "mentor_linkedin":"https://www.linkedin.com/in/daymondjohn?trk=author_mini-profile_title",
+        "mentor_instagram":"@thesharkdaymond",
+        "mentor_twitter":"@TheSharkDaymond",
+        "password":"ImCEO5467"
+    },
+
+    {
+        "first_name": "Michael",
+        "last_name": "Streete",
+        "mentor_email": "street@blackmencode.org",
+        "mentor_linkedin":"https://www.linkedin.com/in/michael-street",
+        "mentor_instagram":"@blackmencode",
+        "mentor_twitter":"@BlackMenCodeOrg",
+        "password":"masterStudent87657"
+    }
+
+]
