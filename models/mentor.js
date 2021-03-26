@@ -41,17 +41,25 @@ Mentor.init(
                 isURL: true,
             },
         },
-            mentor_phone: {
-                type:DataTypes.INTEGER,
+            mentor_instagram: {
+                type:DataTypes.STRING,
                 allowNull: false,
                 unique: true,
                 validate: {
-                    len:[10],
-                    isNumber: true,
-                },
-                
+                   isURL: true,
+                }, 
             },
-        password: {
+
+            mentor_twitter: {
+                type:DataTypes.STRING,
+                allowNull: false,
+                unique: true,
+                validate: {
+                   isURL: true,
+            },
+            },
+
+            password: {
             type: DataTypes.STRING,
             allowNull:false,
             validate: {
