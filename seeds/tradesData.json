@@ -2,12 +2,12 @@
     {
         "Profession": "Firefighter",
         "Bio": "out out fires",
-        "Salary": "43,000"
+        "Salary": 43000
     },
 
 {
         "Profession": "Social Media Marketing Manager",
         "Bio": "SEO",
-        "Salary": "61,000"
+        "Salary": 61000
     }
 ]

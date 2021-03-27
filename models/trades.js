@@ -2,13 +2,13 @@ const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
-class User extends Model {
+class Trade extends Model {
   checkPassword(loginPw) {
     return bcrypt.compareSync(loginPw, this.password);
   }
 }
 
-trades.init(
+Trade.init(
     {
       id: {
         type: DataTypes.INTEGER,
@@ -28,22 +28,24 @@ trades.init(
         validate: {
           len: [250],
 
-      },
+        },
       Salary: { 
         type: DataTypes.INTEGER,
         allowNull: false,
         
+        },
       },
     },
-    
-     
+    {
       sequelize,
       timestamps: false,
       freezeTableName: true,
       underscored: true,
       modelName: 'trades',
     }
+    
+     
   );
   
-  module.exports = trades;
+  module.exports = Trade;
   
