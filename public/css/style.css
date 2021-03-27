@@ -1,0 +1,20 @@
+body {
+    background-color: chartreuse;
+}
+
+nav {
+text-align: center;
+}
+
+h1 {
+text-align: center;
+}
+
+h2 {
+background-color:dodgerblue;
+text-align: center;
+}
+
+#card1, #carouselExampleControls {
+    min-width: fit-content;
+}
