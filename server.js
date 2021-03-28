@@ -3,11 +3,17 @@ const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 const routes = require('./controllers');
+const http = require('http');
+const socketio = require('socket.io')
 
 const sequelize = require('./config/connection');
+const { isObject } = require('util');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express();
+const server = http.createServer(app);
+const io = socketio(server)
+
 const PORT = process.env.PORT || 3001;
 
 // Set up Handlebars.js
@@ -35,8 +41,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
 
+io.on('connection', socket => {
+  console.log('New Connection');
+})
+
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () =>
+  server.listen(PORT, () =>
     console.log('Now listening on http://localhost:' + PORT)
   );
 });
