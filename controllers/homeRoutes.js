@@ -41,4 +41,15 @@ router.get("/login", (req, res) => {
   res.render("login");
 });
 
+// route for chat room
+router.get("/chat", async (req, res) => {
+  try {
+    res.render("chat");
+    
+  } catch (error) {
+    res.status(500).json(err);
+  }
+
+});
+
 module.exports = router;
