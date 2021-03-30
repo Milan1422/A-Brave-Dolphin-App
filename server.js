@@ -46,11 +46,15 @@ io.on('connection', socket => {
   console.log('New Connection');
 
   socket.emit('message', 'Welcome to Ment2Trade ChatRoom');
-// tell when a new user joins the room
+  // tell when a new user joins the room
   socket.broadcast.emit('message', 'A user has joined the chat');
   // runs when a user disconnects
   socket.on('disconnect', () => {
     io.emit('message', 'A user has left the room')
+  })
+  // listen for message on the server
+  socket.on('chatMessage', msg => {
+    io.emit('message', msg)
   })
 })
 
