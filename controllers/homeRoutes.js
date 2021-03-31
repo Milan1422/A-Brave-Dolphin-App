@@ -44,7 +44,16 @@ router.get("/login", (req, res) => {
 // route for chat room
 router.get("/chat", async (req, res) => {
   try {
-    res.render("chat");
+    const userData = await User.findByPk(req.session.user_id, {
+      attributes: { exclude: ["password"] },
+    });
+
+    const user = userData.get({ plain: true });
+
+    res.render("chat", {
+      ...user,
+      logged_in: true,
+    });
     
   } catch (error) {
     res.status(500).json(err);
