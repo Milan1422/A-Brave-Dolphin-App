@@ -1,0 +1,16 @@
+<div class="mentor-container">
+    {{#each mentor as |mentor|}}
+
+ 
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">{{mentor.first_name}}"></mentor></h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{mentor.id}}</h6>
+            <p class="card-text">{{Bio}}</p>
+            <a href="{{mentor.mentor_linkedin}}" class="card-link">Linkedin</a>
+            <a href="{{mentor.mentor_email}}" class="card-link">Email</a>
+        </div>
+    </div>
+     {{/each}}
+</div>
+
