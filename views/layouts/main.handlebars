@@ -19,8 +19,9 @@
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/profile" class="btn btn-primary">Profile</a> 
-        <button class="btn btn-primary" id="logout">Logout</button>
+        <a href="/profile">Profile</a> |
+        <a href="/chat">Join Chat</a> |
+        <button class="btn btn-primary" id="logout">logout</button>
         {{else}}
         <a href="/login" class="btn btn-primary">Login</a>
         {{/if}}
