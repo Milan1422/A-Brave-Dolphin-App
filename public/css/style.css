@@ -15,6 +15,10 @@ background-color:dodgerblue;
 text-align: center;
 }
 
-#card1, #carouselExampleControls {
+h3 {
+    text-align: center;
+}
+
+#card1, #card2, #carouselExampleControls {
     min-width: fit-content;
 }
