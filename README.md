@@ -32,4 +32,12 @@ Our application was built on the basis that there is a need for youths in this c
 
 # Lessons:
 
-We have learned a lot on this project about the full stack application since this project differs so much from the first project it allowed all of os time to experience frontend, backend, and even some middleware development just based on the requirements for the project. The middle ware protects the security of our users by utilizing bcrypt which is an npm library that encrypts the password that a user inputs. 
+We have learned a lot on this project about the full stack application since this project differs so much from the first project it allowed all of us time to experience frontend, backend, and even some middleware development just based on the requirements for the project. The middle ware protects the security of our users by utilizing bcrypt which is an npm library that encrypts the password that a user inputs. This has been a great project and has taught my group so much about the whole full stack dynamic of writing an application. Also we learned to work together as a group from the start we had a lot of great ideas and we essentially took all our ideas and packed it into one application. Handlebars has been a bit of a learning curve for all of us and it has made us question it but as we use it we can see the ease of it and how it would simplify large page applications. 
+
+# Takeaways:
+
+The takeaways from this project start from use of new technologies, handlebars, databases, routes, servers, and so much more. As you can see the file is quite complex the code is also very complex sometimes we had so many files we were working with that it was hard to keep track especially on those late nights after hours of coding. It has been a great learning experience all around and these experiences are exactly what we need to have to be better web developers, team players, and allows us to be ready for our real word jobs after boot camp. Our group worked well together and worked on all facets of the project front and backend we all touched and worked with that code so that we would all get a a full stack web development experience. 
+
+# Screenshots:
+
+# Deployment URL:
