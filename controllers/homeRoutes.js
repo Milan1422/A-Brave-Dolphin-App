@@ -16,7 +16,7 @@ router.get("/", async (req, res) => {
 router.get("/profile", withAuth, async (req, res) => {
   try {
     // Find the logged in user based on the session ID
-    const youthData = await Youth.findByPk(req.session.user_id, {
+    const youthData = await Youth.findByPk(req.session.youth_id, {
       attributes: { exclude: ["password"] },
     });
 
@@ -71,9 +71,9 @@ router.get("/login", (req, res) => {
 });
 
 // route for chat room
-router.get("/chat", async (req, res) => {
+router.get("/chat", withAuth, async (req, res) => {
   try {
-    const youthData = await Youth.findByPk(req.session.user_id, {
+    const youthData = await Youth.findByPk(req.session.youth_id, {
       attributes: { exclude: ["password"] },
     });
 
