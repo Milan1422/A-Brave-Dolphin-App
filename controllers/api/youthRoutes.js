@@ -18,7 +18,7 @@ router.post('/', async (req, res) => {
 
 router.post('/login', async (req, res) => {
   try {
-    const youthData = await youth.findOne({ where: { email: req.body.email } });
+    const youthData = await Youth.findOne({ where: { email: req.body.email } });
 
     if (!youthData) {
       res
