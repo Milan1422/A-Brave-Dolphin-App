@@ -11,17 +11,30 @@
 </head>
 
 <body>
+
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+
+
+
+  
+</div>
+
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
+     
       <h1>
         <a href="/"> Ment2Trade <i class="fas fa-graduation-cap"></i></a>
       </h1>
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
+
         <a href="/profile">Profile</a> |
         <a href="/chat">Join Chat</a> |
         <button class="btn btn-primary"id="logout">Logout</button>
+
         {{else}}
         <a href="/login">Login</a>
         {{/if}}
