@@ -6,10 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ment2Trade</title>
     {{!-- <link rel="stylesheet" href="/css/jass.css"> --}}
-  <link rel="stylesheet" href="/css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-  
-
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -27,15 +25,18 @@
     <header class="display-flex justify-space-between align-center p-2">
      
       <h1>
-        <a href="/">Ment2Trade</a>
+        <a href="/"> Ment2Trade <i class="fas fa-graduation-cap"></i></a>
       </h1>
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/profile" class="nav">Profile</a> 
-        <button class="bubbly-button" id="logout">Logout</button>
+
+        <a href="/profile">Profile</a> |
+        <a href="/chat">Join Chat</a> |
+        <button class="btn btn-primary"id="logout">Logout</button>
+
         {{else}}
-        <a href="/login" class="btn btn-primary">Login</a>
+        <a href="/login">Login</a>
         {{/if}}
       </nav>
     </header>
@@ -55,6 +56,7 @@
   
   {{/if}}
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/d747bd2b7e.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
