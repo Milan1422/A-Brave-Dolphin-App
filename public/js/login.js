@@ -42,6 +42,9 @@ const signupFormHandler = async (event) => {
       alert(response.statusText);
     }
   }
+    
+
+  
 };
 
 document
@@ -51,3 +54,7 @@ document
 document
   .querySelector('.signup-form')
   .addEventListener('submit', signupFormHandler);
+  
+  
+
+  
