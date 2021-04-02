@@ -2,10 +2,11 @@ body {
     background-color:aliceblue;
 }
 
-nav {
-text-align: center;
+h1 {
+    text-align: center;
 }
 
+<<<<<<< HEAD
 
 .goal {
     text-align: center;
@@ -13,6 +14,13 @@ text-align: center;
 }
 h2 {
 background-color:white;
+=======
+nav {
+text-align: center;
+}
+
+h5 {
+>>>>>>> c2bbc69dd0630e6782146dee3f984cd6c74138d0
 text-align: center;
 }
 
@@ -21,6 +29,7 @@ h3 {
 }
 
 #card1, #card2, #carouselExampleControls {
+    margin-bottom: 10px;
     min-width: fit-content;
 }
 

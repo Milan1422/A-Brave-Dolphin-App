@@ -16,14 +16,14 @@ router.get("/", async (req, res) => {
 router.get("/profile", withAuth, async (req, res) => {
   try {
     // Find the logged in user based on the session ID
-    const userData = await User.findByPk(req.session.user_id, {
+    const youthData = await Youth.findByPk(req.session.youth_id, {
       attributes: { exclude: ["password"] },
     });
 
-    const user = userData.get({ plain: true });
+    const youth = youthData.get({ plain: true });
 
     res.render("profile", {
-      ...user,
+      ...youth,
       logged_in: true,
     });
   } catch (err) {
@@ -59,6 +59,7 @@ router.get("/mentorprofile", withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
+
 router.get("/login", (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
@@ -67,6 +68,26 @@ router.get("/login", (req, res) => {
   }
 
   res.render("login");
+});
+
+// route for chat room
+router.get("/chat", withAuth, async (req, res) => {
+  try {
+    const youthData = await Youth.findByPk(req.session.youth_id, {
+      attributes: { exclude: ["password"] },
+    });
+
+    const youth = youthData.get({ plain: true });
+
+    res.render("chat", {
+      ...youth,
+      logged_in: true,
+    });
+    
+  } catch (err) {
+    res.status(500).json(err);
+  }
+
 });
 
 module.exports = router;
