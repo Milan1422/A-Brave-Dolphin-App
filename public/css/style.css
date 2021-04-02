@@ -22,3 +22,307 @@ h3 {
     margin-bottom: 10px;
     min-width: fit-content;
 }
+
+}
+html {
+    height:100%;
+  }
+  
+  body {
+    margin:0;
+  }
+  
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  .content {
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+  }
+  
+  h1 {
+    font-family:monospace;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+  
+
+.btn-pulse:link,
+.btn-pulse:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn-pulse:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-pulse:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color:rgb(17, 135, 245);
+    color: white;
+}
+
+.btn-pulse::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-pulse::after {
+    background-color: white;
+}
+
+.btn-pulse:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+#centerForm {
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    align-items: stretch;
+    border-style: solid;
+    border: lawngreen;
+    border-width: 5px;
+}
+.form-input {
+    width: 45%;
+    margin: 10px;
+    padding: 5px;
+}
+#video {
+    text-align: center;
+    margin: 40px;
+    padding: 20px;
+    
+    
+
+
+
+}
+aside {
+    font-size: calc(8px + 9vh);
+    line-height: calc(8px + 10vh);
+  /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+    color: #fccaff; */
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+      color: #fff6a9;
+    font-family: "Sacramento", cursive;
+    text-align:center;
+    animation: blink 8s infinite;
+    -webkit-animation: blink 12s infinite;
+    left: 15px;
+    margin-right: 20px;
+    padding-top: 30px;
+    margin: 30px;
+  }
+  
+
+  
+  @-webkit-keyframes blink {
+    20%,
+    24%,
+    55% {
+      color: #111;
+      text-shadow: none;
+    }
+  
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+  /*     color: #fccaff;
+      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+      color: #fff6a9;
+    }
+  }
+  
+  @keyframes blink {
+    20%,
+    24%,
+    55% {
+      color: #111;
+      text-shadow: none;
+    }
+  
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+  /*     color: #fccaff;
+      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+      color: #fff6a9;
+    }
+  }
+  $color1: red;
+$color2: blue;
+
+.text-effect {
+  overflow: hidden;
+  position: relative;
+  
+  // The blend modes mute the colors, so let's bump them up
+  filter: contrast(110%) brightness(190%);
+}
+
+.neon {
+  position: relative;
+  
+  // Only works on a black background, sorry
+  background: black;
+  
+  // The actual text inside the div is superfluous, only data-text matters. The text is added so you can easily edit the preview
+  color: transparent;
+  
+  &::before,
+  &::after {
+    // Add two copies of the text on their own layer
+    content: attr(data-text);
+    
+    // White, so we can paint them later
+    color: white;
+    
+    // And blur them to create the neon effect with the blend-mode below
+    filter: blur(0.02em);
+    
+    position: absolute;
+    top: 0; left: 0;
+    pointer-events: none;
+  }
+  
+  // Set the top copy to difference. This creates the knock-out effect with a bit of glow
+  &::after {
+    mix-blend-mode: difference;
+  }
+}
+
+// Position our two effect layers
+.gradient,
+.spotlight {
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  pointer-events: none;
+  z-index: 10;  
+}
+
+// Add the colors
+.gradient {
+  background: linear-gradient(45deg, $color1, $color2);
+  
+  // Multiply mode will paint only the white text
+  mix-blend-mode: multiply;
+}
+
+.spotlight {
+  animation: light 5s infinite linear;
+  
+  // These are the lights, color-dodge needs a black bg for optimum effect
+  background: 
+    radial-gradient(circle, white, transparent 25%) 0 0 / 25% 25%, 
+    radial-gradient(circle, white, black 25%) 50% 50% / 12.5% 12.5%;
+  top: -100%; left: -100%;
+  
+  // Color dodge gives the lights that shimmer effect
+  mix-blend-mode: color-dodge;
+}
+
+@keyframes light {
+  100% {
+    transform: translate3d(50%, 50%, 0);
+  }
+}
+
+//=== Pen styling, ignore
+
+// Style text
+.neon {
+  font: 700 220px 'Lato', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  
+  &:focus { outline: none; border: 1px dotted white; }
+}
