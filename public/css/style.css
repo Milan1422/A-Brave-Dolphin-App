@@ -19,5 +19,6 @@ h3 {
 }
 
 #card1, #card2, #carouselExampleControls {
+    margin-bottom: 10px;
     min-width: fit-content;
 }
