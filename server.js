@@ -56,7 +56,7 @@ io.on('connection', socket => {
     io.emit('message', formatMessage(botName, 'A user has left the room'));
   })
   // listen for message on the server
-  const youthUsername = Youth.name
+  const youthUsername = "User";
   
   socket.on('chatMessage', msg => {
     io.emit('message', formatMessage(youthUsername , msg))
