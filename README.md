@@ -39,7 +39,7 @@ We have learned a lot on this project about the full stack application since thi
 The takeaways from this project start from use of new technologies, handlebars, databases, routes, servers, and so much more. As you can see the file is quite complex the code is also very complex sometimes we had so many files we were working with that it was hard to keep track especially on those late nights after hours of coding. It has been a great learning experience all around and these experiences are exactly what we need to have to be better web developers, team players, and allows us to be ready for our real word jobs after boot camp. Our group worked well together and worked on all facets of the project front and backend we all touched and worked with that code so that we would all get a a full stack web development experience. 
 
 # Screenshots:
-![Alt Text](https://media.giphy.com/media/rN8U50qgGjc3E4ELPp/giphy.gif)
+![Alt Text](https://media.giphy.com/media/rN8U50qgGjc3E4ELPp/giphy-downsized-large.gif)
 
 ![Alt Text](https://media.giphy.com/media/9JIis2j6POf0CxiN2f/giphy.gif)
 
