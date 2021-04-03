@@ -52,3 +52,7 @@ The takeaways from this project start from use of new technologies, handlebars, 
 # Deployment URL:
 
 * https://rhubarb-cake-73090.herokuapp.com/
+
+# Slides Presentation:
+
+* https://docs.google.com/presentation/d/1LZjEpXp1rD9yxitly1ANSWb1hO2jitKePyw8vVV0s_4/edit?usp=sharing
