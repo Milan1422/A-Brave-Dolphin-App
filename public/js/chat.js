@@ -5,7 +5,6 @@ const socket = io();
 
 // message from server
 socket.on('message', message => {
-    console.log(message);
     outputMessage(message);
 
     chatMessages.scrollTop = chatMessages.scrollHeight;
@@ -32,7 +31,7 @@ function outputMessage(message) {
     const div = document.createElement('div');
     div.classList.add('message');
     div.innerHTML = `
-    <p class="meta">${message.username}<span>${message.time}</span></p>
+    <p class="meta">${message.username} <span> ${message.time}</span></p>
     <p class="text">
     ${message.text}
     </p>`;
