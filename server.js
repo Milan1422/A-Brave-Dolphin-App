@@ -5,9 +5,10 @@ const exphbs = require('express-handlebars');
 const routes = require('./controllers');
 const http = require('http');
 const socketio = require('socket.io');
-
+const formatMessage = require('./utils/messages')
 const sequelize = require('./config/connection');
 const { isObject } = require('util');
+const { Youth } = require('./models');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express();
@@ -42,19 +43,23 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(routes);
 
 // socket io backend
+const botName = "Ment2Trade"
+
 io.on('connection', socket => {
   console.log('New Connection');
 
-  socket.emit('message', 'Welcome to Ment2Trade ChatRoom');
+  socket.emit('message', formatMessage(botName, 'Welcome to Ment2Trade ChatRoom'));
   // tell when a new user joins the room
-  socket.broadcast.emit('message', 'A user has joined the chat');
+  socket.broadcast.emit('message', formatMessage(botName, 'A user has joined the chat'));
   // runs when a user disconnects
   socket.on('disconnect', () => {
-    io.emit('message', 'A user has left the room')
+    io.emit('message', formatMessage(botName, 'A user has left the room'));
   })
   // listen for message on the server
+  const youthUsername = "User";
+  
   socket.on('chatMessage', msg => {
-    io.emit('message', msg)
+    io.emit('message', formatMessage(youthUsername , msg))
   })
 })
 
